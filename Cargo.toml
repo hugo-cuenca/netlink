@@ -38,7 +38,7 @@ default-members = [
 ]
 
 [patch.crates-io]
-netlink-sys = { path = "netlink-sys" }
+netlink-sys-mio-0-8 = { path = "netlink-sys" }
 netlink-packet-core = { path = "netlink-packet-core" }
 netlink-packet-utils = { path = "netlink-packet-utils" }
 netlink-packet-generic = { path = "netlink-packet-generic" }

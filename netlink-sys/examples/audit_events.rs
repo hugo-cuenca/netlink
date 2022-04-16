@@ -24,7 +24,7 @@ use netlink_packet_audit::{
     NLM_F_REQUEST,
 };
 
-use netlink_sys::{protocols::NETLINK_AUDIT, Socket, SocketAddr};
+use netlink_sys_mio_0_8::{protocols::NETLINK_AUDIT, Socket, SocketAddr};
 
 pub const AUDIT_STATUS_ENABLED: u32 = 1;
 pub const AUDIT_STATUS_PID: u32 = 4;

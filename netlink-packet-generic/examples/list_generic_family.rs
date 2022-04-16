@@ -5,7 +5,7 @@ use netlink_packet_generic::{
     ctrl::{nlas::GenlCtrlAttrs, GenlCtrl, GenlCtrlCmd},
     GenlMessage,
 };
-use netlink_sys::{protocols::NETLINK_GENERIC, Socket, SocketAddr};
+use netlink_sys_mio_0_8::{protocols::NETLINK_GENERIC, Socket, SocketAddr};
 
 fn main() {
     let mut socket = Socket::new(NETLINK_GENERIC).unwrap();

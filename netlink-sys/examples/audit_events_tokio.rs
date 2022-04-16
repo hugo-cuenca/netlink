@@ -24,7 +24,7 @@ use netlink_packet_audit::{
     NLM_F_REQUEST,
 };
 
-use netlink_sys::{protocols::NETLINK_AUDIT, AsyncSocket, AsyncSocketExt, SocketAddr, TokioSocket};
+use netlink_sys_mio_0_8::{protocols::NETLINK_AUDIT, AsyncSocket, AsyncSocketExt, SocketAddr, TokioSocket};
 
 const AUDIT_STATUS_ENABLED: u32 = 1;
 const AUDIT_STATUS_PID: u32 = 4;

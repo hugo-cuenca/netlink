@@ -5,7 +5,7 @@
  * to use netlink.
  */
 
-use netlink_sys::{protocols::NETLINK_AUDIT, AsyncSocket, TokioSocket};
+use netlink_sys_mio_0_8::{protocols::NETLINK_AUDIT, AsyncSocket, TokioSocket};
 
 fn main() -> Result<(), String> {
     let rt = tokio::runtime::Builder::new_multi_thread()
